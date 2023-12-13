@@ -1,0 +1,46 @@
+.menu-div p {
+  cursor: pointer;
+}
+
+.min-menu span {
+  color: #8a8a8a;
+}
+
+.min-menu span.dot3 {
+  transform: rotate(-45deg);
+}
+
+.search {
+  background-color: #dee2e6;
+  width: 360px;
+  height: 42px;
+  border-radius: 21px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 242px;
+  height: 19px;
+  margin-left: 5px;
+}
+
+.log-color {
+  color: #27a365;
+}
+
+.logo-color2 {
+  color: #5c5d5d;
+}
+
+.sign-color {
+  color: #2f6ce5;
+}
+
+.hidden-menu {
+  z-index: 99999;
+}

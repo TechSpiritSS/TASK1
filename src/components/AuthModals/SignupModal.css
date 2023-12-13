@@ -1,0 +1,196 @@
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+
+.signup-modal {
+  width: 735px;
+  /* height: 400px; */
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  /* background-color: white; */
+  z-index: 9999;
+}
+
+.signup-modal .close {
+  cursor: pointer;
+  height: 23px;
+  width: 23px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.modalbody {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.modalbody .form-div {
+  padding: 10px 20px;
+}
+
+.modalbody .form-div .main-form p {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.modalbody .form-div .main-form input {
+  background: #f7f8fa;
+  border: 1px solid #d9d9db;
+  outline: none;
+  border-radius: 0px 0px 2px 2px;
+}
+
+.modalbody .form-div .main-form .submit {
+  background: #2f6ce5;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  padding: 10px 0px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.modalbody .form-div .main-form .facebook,
+.google {
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 0px;
+  border: 1px solid #d9d9db;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.modalbody .title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #008a45;
+  background: #effff4;
+  text-align: center;
+  padding: 25px 0px;
+}
+
+.modalbody .form-div .img-div .fp {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.last-p {
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.sign-color {
+  color: #2f6ce5;
+  cursor: pointer;
+}
+
+.fp {
+  margin-top: 23px;
+  cursor: pointer;
+  color: #000;
+  text-align: center;
+  font-family: IBM Plex Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; 
+  letter-spacing: -0.096px;
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .signup-modal {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    bottom: 0; 
+    background: none;
+  }
+
+  .modalbody {
+    padding: 20px; /  }
+
+  .modalbody .form-div {
+    padding: 10px;  }
+
+  .modalbody .title {
+    font-size: 18px;   }
+
+  .modalbody .form-div .main-form p {
+    font-size: 20px;}
+
+  .modalbody .form-div .main-form input {
+    padding: 10px;  }
+
+  .modalbody .form-div .main-form .submit {
+    font-size: 16px;  }
+
+  .modalbody .form-div .main-form .facebook,
+  .google {
+    padding: 10px;   }
+
+  .modalbody .form-div .img-div .fp {
+    font-size: 14px;   }
+
+  .last-p {
+    font-size: 12px; }
+}
+
+@media screen and (max-width:768px) {
+  .submit {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .signup-modal {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    top: calc(100vh - 80px);
+    background-color: white;
+    height: 100vh;
+  }
+
+  .modalbody .form-div .main-form .submit {
+    width: 60%;
+  }
+
+
+}
